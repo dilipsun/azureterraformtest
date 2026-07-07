@@ -10,7 +10,7 @@ on:
 
 jobs:
   run-terraform-plan:
-    uses: dilipsun/oidc-auth-workflow/.github/workflows/terraform-plan.yml@main
+    uses: dilipsun/oidc-auth-workflow/.github/workflows/terraform-deploy.yml@main
     with:
       terraform_version: "${{ inputs.terraform_version }}"
     secrets: inherit
